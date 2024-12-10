@@ -8,11 +8,12 @@
 // The list item should have a "Remove" button next to it.
 // When the user clicks the "Remove" button, the corresponding list item should be removed from the "todoList" ul.
 
-let item = document.getElementsByName('input');
-const createNewList = item => {
+
+const createNewList = () => {
 let newList = document.createElement('li');
-newList.textContent = item;
+newList.textContent = document.getElementById('input-item').value;
 let unorderedList = document.querySelector('#todolist');
-unorderedList.appendChild('newList');
+unorderedList.appendChild(newList);
 }
-console.log(createNewList());
+let button = document.querySelector('#button-add');
+button.addEventListener('click', createNewList);
