@@ -1,0 +1,100 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the To-Do List */
+  .todo-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title of the App */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Input Field for Adding Tasks */
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  /* Button to Add Tasks */
+  button {
+    padding: 10px 15px;
+    background-color: #5c6bc0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3f4a91;
+  }
+  
+  /* List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  /* List Item Styling */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Checkbox for Completed Tasks */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Delete Button for Tasks */
+  .delete-btn {
+    background-color: #e57373;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Styling Completed Tasks */
+  .completed {
+    text-decoration: line-through;
+    color: #777;
+  }
+  

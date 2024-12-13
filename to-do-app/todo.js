@@ -16,6 +16,7 @@ let unorderedList = document.querySelector('#todolist');
 unorderedList.appendChild(newList);
 
 let buttonRemove = document.createElement('button');
+buttonRemove.className = 'delete-btn';
 buttonRemove.textContent = 'Remove';
 newList.appendChild(buttonRemove);
 buttonRemove.addEventListener('click', function remove(){
