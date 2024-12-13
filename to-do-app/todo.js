@@ -14,6 +14,24 @@ let newList = document.createElement('li');
 newList.textContent = document.getElementById('input-item').value;
 let unorderedList = document.querySelector('#todolist');
 unorderedList.appendChild(newList);
-}
-let button = document.querySelector('#button-add');
-button.addEventListener('click', createNewList);
+
+let buttonRemove = document.createElement('button');
+buttonRemove.textContent = 'Remove';
+newList.appendChild(buttonRemove);
+buttonRemove.addEventListener('click', function remove(){
+    newList.remove()
+ }) 
+ let input = document.createElement('input');
+ input.type = 'checkbox'
+newList.prepend(input);
+input.addEventListener('click', function() {
+    let strike = document.createElement('s');
+    strike.innerText = newList;
+document.body.appendChild(strike);
+});
+} 
+
+ let buttonAdd = document.querySelector('#button-add');
+ buttonAdd.addEventListener('click', createNewList);
+ 
+
